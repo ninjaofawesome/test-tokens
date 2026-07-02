@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "testing amazon style dictionary",
   "license": "ISC",
-  "author": "Hannah Dresser",
+  "author": "",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
