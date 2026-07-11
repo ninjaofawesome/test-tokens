@@ -62,3 +62,32 @@ Note that the object is called `web-[format type]` in the following examples.  T
 ```
 
 Also to note, this builds EVERYTHING as is to a tokens file, no destinations by section, filters, etc.  See the [docs](https://styledictionary.com/getting-started/installation/) for more specific topics.
+
+## How to create tokens
+
+If thinking of tokens, using atomic principles help here.  
+
+For atoms examples check out `colors.json` and `dimensions.json`. They're pretty simple objects that are constructed as such:
+
+```
+{
+    "nameOfPropertyPlural" : {
+        "$type": "nameOfPropertySingular",
+        "keyName": {
+            "value": [some primitive value type]
+        }
+    }
+}
+```
+
+Next come molecules. `text.json` has some good examples here, where logical groupings are made for fonts, sizes, weights, lineheights, and composed typography styles.
+
+Note here, as opposed to the atomic example above, that the name of the object and the `$type` in the object don't have to be plural and singular.  The `$type` describes what the nested value is.  So, if tha name of the key is `"text"`(1) and the first level below that is `"fonts"`(2), and the first nested value is `$type` is `"fontFamily"` (0) and then sibling selectors like `"serif"` or `"sans"` (3), to call the sans-serif font like so:
+
+```
+"fontFamily": "{text.fonts.sans}"
+```
+or
+```
+"0": "{1.2.3}"
+```
