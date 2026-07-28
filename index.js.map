@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sources":["index.ts"],"sourcesContent":["console.log('hello world');\n\nexport const sayHello = (name: string) => `Hello, ${name}`;"],"names":[],"mappings":"AAAA,OAAO,CAAC,GAAG,CAAC,aAAa,CAAC;AAEnB,MAAM,QAAQ,GAAG,CAAC,IAAY,KAAK,CAAA,OAAA,EAAU,IAAI,CAAA;;;;"}
